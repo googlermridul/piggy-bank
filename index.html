@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- GOOGLE FONT CDN -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <!-- FONT AWESOME CDN -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+   <!-- BOOTSTRAP CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+   <title>Piggy Bank</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+   
+   <section id="mainSection">
+      <div class="side-nav">
+         <div class="logo">
+            <img src="salary.png" alt="">
+         </div>
+         <ul id="listItem">
+            <li><a href="#" class="active"><i class="fa fa-th-large"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa-wallet"></i> Wallets</a></li>
+            <li><a href="#"><i class="fa fa-chart-bar"></i> Insights</a></li>
+            <li><a href="#"><i class="fa fa-comment"></i> Chats</a></li>
+            <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+         </ul>
+      </div>
+      <div class="banking-system">
+         <div class="row">
+            <div class="col-12">         
+               <h2 class="header-txt text-center text-md-left">Welcome to Piggy Bank</h2>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+               <div class="money-box">
+                  <h4>Deposit</h4>
+                  <h1>$<span id="currentDeposit">800</span></h1>
+                  <img class="bank-icon" src="visa.png" alt="">
+               </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+               <div class="money-box box-2">
+                  <h4>Withdraw</h4>
+                  <h1>$<span id="currentWithdraw">300</span></h1>
+                  <img class="bank-icon" src="visa.png" alt="">
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="money-box box-3">
+                  <h4>Balance</h4>
+                  <h1>$<span id="currentBalance">500</span></h1>
+                  <img class="bank-icon" src="visa.png" alt="">
+               </div>
+            </div>
+         </div>
+         <div class="row add-money">
+            <div class="col-12">
+               <h2 class="header-txt text-center text-md-left">Add Or Withdraw Money</h2>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3 mb-sm-0">
+               <div class="input-group">
+                  <input id="depositAmount" class="form-control" placeholder="Add Money">
+                  <button id="addDeposit" class="btn"><i class="fa fa-plus"></i></button>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+               <div class="input-group">
+                  <input id="withdrawAmount" class="form-control" type="number" placeholder="Withdraw Money">
+                  <button id="withdrawBtn" class="btn btn2"><i class="fa fa-plus"></i></button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
