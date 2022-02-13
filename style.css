@@ -4,9 +4,8 @@
    box-shadow: border-box;
 }
 body {
-   font-family: 'Teko', sans-serif;
+   font-family: "Teko", sans-serif;
    background: #feedf3;
-   
 }
 #mainSection {
    background: #fff;
@@ -35,7 +34,7 @@ body {
 #listItem li .fa {
    color: #666;
    margin-right: 10px;
-   transition: .4s;
+   transition: 0.4s;
 }
 #listItem li .fa-th-large {
    color: #9dcc5a;
@@ -44,7 +43,7 @@ body {
    color: #666;
    text-decoration: none;
    font-size: 20px;
-   transition: .4s;
+   transition: 0.4s;
 }
 #listItem li a.active,
 #listItem li a:hover,
@@ -52,7 +51,7 @@ body {
    color: #9dcc5a;
 }
 
-.banking-system {   
+.banking-system {
    padding: 50px;
 }
 .header-txt {
@@ -127,7 +126,6 @@ body {
    box-shadow: 0 0 0 0rem rgb(0 123 255 / 25%);
 }
 
-
 @media (min-width: 1600px) {
    #mainSection {
       width: 1366px;
@@ -137,7 +135,7 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
    }
-   .banking-system {   
+   .banking-system {
       width: calc(100% - 242px);
       margin-left: 242px;
    }
@@ -146,7 +144,7 @@ body {
 @media (max-width: 1599px) {
    #mainSection {
       width: 1200px;
-      height: 685px;
+      /* height: 685px; */
       position: absolute;
       top: 50%;
       left: 50%;
@@ -161,17 +159,23 @@ body {
    }
 }
 
+@media (min-width: 1200px) {
+   #mainSection {
+      height: 685px;
+   }
+}
+
 @media (max-width: 1199px) {
    body {
-      padding: 50px;
+      /* padding: 50px; */
    }
    #mainSection {
       width: 100%;
-      height: 100%;
+      /* height: 100%;
       position: relative;
       top: 0%;
       left: 0%;
-      transform: translate(-0%, -0%);
+      transform: translate(-0%, -0%); */
    }
    .side-nav {
       display: none;
@@ -183,8 +187,8 @@ body {
 }
 
 @media (max-width: 992px) {
-   body {
-      padding: 30px;
+   .container {
+      max-width: 95%;
    }
    .banking-system {
       padding: 30px;
@@ -194,6 +198,9 @@ body {
 @media (max-width: 768px) {
    body {
       padding: 15px;
+   }
+   .container {
+      max-width: 100%;
    }
    #mainSection {
       padding: 0px !important;
